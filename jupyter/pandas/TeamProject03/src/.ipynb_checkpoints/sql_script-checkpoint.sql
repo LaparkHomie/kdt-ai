@@ -1,0 +1,20 @@
+-- 세현님 코드 인용
+CREATE DATABASE projectdb;
+USE projectdb;
+
+SELECT * FROM pop_2021;
+SELECT * FROM pop_2022;
+SELECT * FROM pop_2023;
+SELECT * FROM pop_2024;
+
+DROP TABLE IF EXISTS poptbl;
+CREATE TABLE poptbl AS
+	SELECT * FROM pop_2021 UNION ALL
+	SELECT * FROM pop_2022 UNION ALL
+	SELECT * FROM pop_2023 UNION ALL
+	SELECT * FROM pop_2024;
+
+SELECT * FROM poptbl;
+
+-- 파이썬 코드 실행
+SELECT * FROM poptbl;
