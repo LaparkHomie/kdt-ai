@@ -1,4 +1,4 @@
-# pip install openpyxl
+# pip install crawling
 # 참고사이트: https://openpyxl.readthedocs.io/en/stable/tutorial.html#installation
 
 from openpyxl import Workbook, load_workbook

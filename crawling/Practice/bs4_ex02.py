@@ -36,4 +36,4 @@ print(soup.prettify())
 li_list = soup.select("div > ul.brand > li")
 print(li_list)
 for li in li_list:
-    print(li.string)
+	print(li.string)
